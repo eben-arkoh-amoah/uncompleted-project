@@ -1,0 +1,16 @@
+*,*::after,*::before{
+box-sizing: border-box;
+background: none;
+text-decoration: none;
+border: none;
+outline:  none;
+}
+
+.box--shadow{
+ box-shadow: 2px 2px 1em rgba(0,0,0,0.2);
+}
+
+@import "./componentStyles/header";
+@import "./componentStyles/main";
+@import "./componentStyles/CountryPage";
+@import "./componentStyles/SingleCountry"

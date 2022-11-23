@@ -1,0 +1,74 @@
+@import "./mixins" ;
+
+.countryItems{
+@include decorations(#FFF, none, none  , 4px ) ;
+
+a{
+        color : #000
+    }
+
+    .img--area{
+
+      img{
+        @include decorations(none, 150px, 100% , 4px ) ;
+      }
+
+    }
+
+
+    .data--area{
+        padding: 10px 20px;
+
+        p{
+            @include font-and-margins(500 , 13px , none , 10px , 0px , none );
+             
+            span{
+                font-weight: 300;
+            }
+        }
+    }
+
+    .country--name{
+        font-size: 17px;
+        margin: 10px 0px;
+    }
+}
+
+
+
+
+@include media(500px){
+    .countryItems{
+        
+        a{
+            color: #000;
+            }
+        
+            .img--area{
+              img{
+             width: 100%;
+             height: auto;
+             margin: auto;
+            }
+        
+            }
+        
+            .data--area{
+                padding: 10px 20px;
+        
+                p{
+                    @include font-and-margins(500 , 13px , none , 10px , 0px , none );
+                     
+                    span{
+                        font-weight: 300;
+                    }
+                }
+            }
+        
+            .country--name{
+                font-size: 17px;
+                margin: 10px 0px;
+            }
+        }
+}
+

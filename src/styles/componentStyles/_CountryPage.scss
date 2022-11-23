@@ -1,0 +1,50 @@
+    @import "./mixins" ;
+    
+    .CountryPage{
+        @include heights--margins((calc(60vh)) , 93% , auto , auto , none , 0px ) ;
+
+        #back--button {
+            @include heights--margins(40px , 120px , 30px , 0px , none, none);
+            @include flex(flex , none , center , center, none);
+            box-shadow: 2px 2px 1em rgba(0,0,0,0.2);  
+            color: rgb(19, 18, 18); 
+            font-size: 30px;
+
+            .arrow--tail{
+                width: 30px;
+                margin-top: 8px;
+                border-bottom: 2px solid ;
+            }
+
+            .arrow--bar{
+                margin-top: 7px;
+                margin-left: -3.5px;
+                height: 15px;
+                border-right: 2px solid ;
+            }
+        }
+
+        .loading{
+            min-height: 100vh;
+        }
+    }
+
+  
+
+   
+
+    
+@include media(500px){
+    .SingleCountry{
+        @include heights--margins((calc(60vh)) , 100% , auto , auto , 4px , 10px ) ;
+   
+    }
+    #back--button{
+        @include heights--margins(20px ,57px , 20px , 3px , none , none);
+    }
+
+   
+    }
+
+    
+

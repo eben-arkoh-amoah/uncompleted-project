@@ -1,0 +1,37 @@
+@mixin  decorations($background, $height, $width ,  $radius ) {
+    background: $background;
+    height: $height;
+    width:  $width;
+    border-radius: $radius;
+}
+
+@mixin  font-and-margins($fontWeight, $fontSize , $color ,
+ $verticalMargin , $horizontalMargin , $padding ) {
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    color: $color;
+    margin: $verticalMargin $horizontalMargin;
+    padding: $padding;
+}
+
+@mixin  heights--margins($height , $width , $verticalMargin ,
+ $horizontalMargin , $verticalPadding ,  $horizontalPadding) {
+    height: $height;
+    width: $width;
+    margin: $verticalMargin $horizontalMargin;
+    padding: $verticalPadding $horizontalPadding;
+}
+
+@mixin flex($flex, $fdr , $jc , $al , $gap){
+   display: $flex;
+   flex-direction: $fdr;
+   justify-content: $jc;
+   align-items: $al;
+   gap: $gap;
+}
+
+@mixin media($max-width) {
+    @media screen and (max-width : $max-width) {
+        @content;
+    }
+}

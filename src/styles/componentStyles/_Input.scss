@@ -1,0 +1,61 @@
+@import "./mixins";
+
+.InputArea{
+    @include flex(flex, none , space-between , none , none);
+    @include heights--margins(none, none, auto , auto , 40px , 0px);
+    
+    input{
+        @include heights--margins(50px , 450px , none , none , 0px , 10px) ;
+        border-radius: 2px;
+        font-size: 14px; 
+    }
+
+    select{
+        border-radius: 2px;
+        padding: 0px 20px;
+        font-size: 14px;
+    }
+}
+
+@include media(1024px){
+    .InputArea{
+        input{
+            @include heights--margins(48px , 45% , start , auto , 0px , 2% );
+    }
+}
+}
+
+
+@include media(800px){
+    .InputArea{
+        flex-direction: column;
+        gap: 30px;
+        input{
+            @include heights--margins(48px , 55% , start , auto , 0px , 3% );
+    }
+
+    select{
+        @include heights--margins(48px , 28% , auto , start , 0px , 3% );
+    }
+
+}
+}
+
+// @include media(500px){
+//     .InputArea{
+//         flex-direction: column;
+//         gap: 30px;
+//         input{
+//             @include heights--margins(48px , 100% , start , auto , 0px , 5% );
+//              font-size: 12px;
+//     }
+
+//     select{
+//         @include heights--margins(48px , 50% , auto , start , 0px , 5% );
+//         font-size: 12px;
+//     }
+
+// }
+    
+// }
+
