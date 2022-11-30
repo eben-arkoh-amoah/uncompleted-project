@@ -1,6 +1,6 @@
 import { SingleCountryTs } from "../../types/SingleCountry"
 import { Link } from "react-router-dom";
-import React from "react";
+
 
 export const SingleCountry = ({
     name,nativeName,population,region,subregion,capital,
@@ -30,14 +30,16 @@ export const SingleCountry = ({
               </div>
               </div> 
           <div className="border--area">
-            <p>Border Countries : </p>
+            <p>Border Countries :</p>
             <div className="borders">
               {borders &&
-              borders.map((item,index)=> <Link to={`code/${item}`} key={index}>{item}</Link>)}
+              borders.map((borderCode,index)=>
+               <span className="singleBorder" key={index}>{borderCode}</span>
+               )}
             </div>
           </div>   
           </div> 
      </div>
-          
+
     )
 }

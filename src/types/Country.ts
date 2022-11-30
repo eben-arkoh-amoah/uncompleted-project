@@ -6,8 +6,9 @@ export interface CountryTs{
     subregion: string,
     capital: string,
     flags: {
-        png: string
-    },
+        png : string
+    }
+,
     topLevelDomain:[
         string
     ],

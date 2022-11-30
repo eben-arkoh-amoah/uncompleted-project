@@ -34,18 +34,18 @@ setLoading(false);
            {!loading &&
               country.map((item,index) => (
                 <SingleCountry 
-                flag={item.flags.png}
-                name={item.name}
-                nativeName={item.nativeName}
-                population={item.population}
-                region={item.region}
-                subregion={item.subregion}
-                capital={item.capital}
-                topLevelDomain={item.topLevelDomain[0]}
-                currencie = {item.currencies && item.currencies}
-                languages = {item.languages}
-                borders = {item.borders}
-                key = {index}
+                    flag = {item.flags.png}
+                    name = {item.name}
+                    nativeName = {item.nativeName}
+                    population = {item.population}
+                    region = {item.region}
+                    subregion = {item.subregion}
+                    capital = {item.capital}
+                    topLevelDomain = {item.topLevelDomain[0]}
+                    currencie = {item.currencies && item.currencies}
+                    languages = {item.languages}
+                    borders = {item.borders}
+                    key = {index}
                 />
               ))
            }
